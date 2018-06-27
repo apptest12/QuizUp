@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewhereAcitivy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--First Name edit text -->
+        <EditText
+            android:id="@+id/etfname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="107dp"
+            android:ems="10"
+            android:hint="@string/fname"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <!--Last Name edit text -->
+        <EditText
+            android:id="@+id/etlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165dp"
+            android:ems="10"
+            android:hint="@string/lname"
+            android:inputType="textPersonName" />
+
+        <!--Email edit text -->
+        <EditText
+            android:id="@+id/etemail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="221dp"
+            android:ems="10"
+            android:hint="@string/email1"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <!--Password edit text -->
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="181dp"
+            android:ems="10"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <!--Confirm password edit text -->
+        <EditText
+            android:id="@+id/etconpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:ems="10"
+            android:hint="@string/conpwd"
+            android:inputType="textPassword" />
+
+        <!-- Register button-->
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etfname"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/etfname"
+            android:layout_marginBottom="46dp"
+            android:background="#ff9a00"
+            android:padding="10dp"
+            android:text="@string/reg" />
+
+        <!--Register form text view-->
+        <TextView
+            android:id="@+id/tvregform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/regform"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Login button-->
+        <Button
+            android:id="@+id/btnlogin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnreg"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:background="#ff9a00"
+            android:padding="10dp"
+            android:text="@string/login1" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

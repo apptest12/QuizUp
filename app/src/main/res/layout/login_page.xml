@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login">
+
+        <!--Email edit text -->
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="117dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <!--Password edit text -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="176dp"
+            android:ems="10"
+            android:hint="@string/pwd"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#FFFFFF" />
+
+        <!-- Login button-->
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="203dp"
+            android:background="#ff9a00"
+            android:text="@string/login" />
+
+        <!-- Facebook Login button-->
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="144dp"
+            android:background="#0000ff" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="92dp"
+            android:gravity="center"
+            android:text="@string/_20dp" />
+
+        <LinearLayout
+            android:id="@+id/llProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3" />
+
+        <!-- Image view-->
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="104dp"
+            android:layout_height="83dp"
+            android:layout_above="@+id/etemail"
+            android:layout_marginBottom="-94dp"
+            android:contentDescription="@string/todo"
+            android:orientation="horizontal"
+            android:src="@drawable/photo"
+            android:text="@string/imgProfilePic"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="245dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <!--Name display Label -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/name_display_here"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--Email display Label -->
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/email_display_here"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Logout  from google button-->
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/btn_logout_from_google"
+                android:visibility="gone" />
+
+            <!-- Revoke access button-->
+            <Button
+                android:id="@+id/btn_revoke_access"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_revoke_access"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Gmail SignIn button-->
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="183dp"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:textColor="#fff" />
+
+        <!--New here sign up edit text -->
+        <TextView
+            android:id="@+id/tvnewhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etPassword"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/etPassword"
+            android:layout_marginBottom="57dp"
+            android:onClick="new_activity"
+            android:text="@string/newhere"
+            android:textColor="#4c4c4c"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!--Login text view -->
+        <TextView
+            android:id="@+id/tvsigninpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:text="@string/signinpage"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
